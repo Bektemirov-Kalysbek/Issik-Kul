@@ -1,0 +1,50 @@
+body{
+   background-image: url(./orig.webp);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+h1{
+    text-align: center;
+    font-family: monospace;
+    font-size: 2.5rem;
+    margin-top: 30px;
+    color:rgba(87, 247, 247, 0.823);
+}
+.gallery {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    margin: 5% auto 0;
+    box-sizing: border-box;
+    border-radius: 20%;
+}  
+.image-box{
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+    border-radius: 20%;
+}
+.image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius:5rem;
+    box-shadow: 0px 0px 10px 10px rgba(87, 247, 247, 0.823);
+    border: 3px solid rgba(87, 247, 247, 0.823);
+    object-fit: cover;
+    transition: .5s;
+}
+.image-box:hover {
+    flex-basis: 50%;
+}
+.active {
+    flex-basis: 50%;
+}
+.gallery:hover .active{
+    flex-basis: 0;
+}
+.image-box:nth-child(1):hover{
+    flex-basis: 50%;
+}
+
